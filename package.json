@@ -1,0 +1,28 @@
+{
+  "name": "consolert",
+  "version": "1.0.0",
+  "description": "Improved console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvrheenen/consolert.git"
+  },
+  "keywords": [
+    "console",
+    "color",
+    "tag",
+    "timestamp"
+  ],
+  "author": "Rick van Rheenen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rvrheenen/consolert/issues"
+  },
+  "homepage": "https://github.com/rvrheenen/consolert#readme",
+  "dependencies": {
+    "chalk": "^4.0.0"
+  }
+}

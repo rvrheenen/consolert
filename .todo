@@ -1,0 +1,5 @@
+- expand debug to be levels instead of boolean
+- allow customizing onlyInDebugMode methods
+- allow for custom stdout and stderr
+- allow for custom colors
+- allow custom timestamp
