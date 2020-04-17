@@ -1,3 +1,4 @@
+language: nodejs
 deploy:
   provider: npm
   email: npm@rivartech.com
