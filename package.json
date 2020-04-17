@@ -4,7 +4,7 @@
   "description": "Improved console",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand --watch"
+    "test": "jest --runInBand"
   },
   "jest": {
     "testEnvironment": "node"
