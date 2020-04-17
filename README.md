@@ -13,7 +13,7 @@ npm install consolert
 ### Usage
 To overwrite the built-in console:
 Oneliner:
-``` 
+``` javascript
 const console = new (require("consolert"))(options)
 ```
 
