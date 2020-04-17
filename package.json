@@ -4,7 +4,8 @@
   "description": "Improved console",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "publish": "np"
   },
   "jest": {
     "testEnvironment": "node"
@@ -29,6 +30,7 @@
     "chalk": "^4.0.0"
   },
   "devDependencies": {
-    "jest": "^25.3.0"
+    "jest": "^25.3.0",
+    "np": "^6.2.1"
   }
 }
