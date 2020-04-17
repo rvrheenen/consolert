@@ -21,7 +21,7 @@ const { Console } = require('console');
 const chalk = require("chalk")
 
 module.exports = class Consolert extends Console {
-    constructor({tag=["N/A"], debug=false, showTime=true, showTag=true, showType=true}) {
+    constructor({tag=["N/A"], debug=false, showTime=true, showTag=true, showType=true} = {}) {
         super(process.stdout);
 
         this.tag       = tag
