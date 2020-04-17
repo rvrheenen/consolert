@@ -42,7 +42,7 @@ const console = new Consolert({tag:"APP", debug:true})
 console.log("Tagged by Consolert")
 console.debug("eee bugses!")
 console.warn("Something might be broken..")
-console.error("Something is definetly broken!")
+console.error("Something is definitely broken!")
 ```
 
 terminal:
@@ -51,7 +51,7 @@ foo@bar:~$ node logs/index.js
 LOG   2020-04-17 15:52:53 [APP] Tagged by Consolert
 DEBUG 2020-04-17 15:52:53 [APP] eee bugses!
 WARN  2020-04-17 15:52:53 [APP] Something might be broken..
-ERROR 2020-04-17 15:52:53 [APP] Something is definetly broken!
+ERROR 2020-04-17 15:52:53 [APP] Something is definitely broken!
 ```
 (note these would be colored according to their type, but markdown doesn't let me show that..)
 
