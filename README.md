@@ -1,5 +1,11 @@
 # consolert
 [![Build Status](https://travis-ci.org/rvrheenen/consolert.svg?branch=master)](https://travis-ci.org/rvrheenen/consolert)
+[![Last commit](https://img.shields.io/github/last-commit/rvrheenen/consolert)](https://github.com/rvrheenen/consolert)
+[![Downloads](https://img.shields.io/npm/dt/consolert)](https://www.npmjs.com/package/consolert)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/rvrheenen/consolert/blob/master/LICENSE)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-informational.svg)](https://paypal.me/rivartech)
+[![Donate](https://img.shields.io/badge/Donate-Liberapay-informational.svg)](https://liberapay.com/rvrheenen)
+[![Donate](https://img.shields.io/badge/Donate-Crypto-informational.svg)](https://commerce.coinbase.com/checkout/c1219cf1-95da-4bdb-8089-7baddb1a2d34)
 
 Created by: Rick van Rheenen
 
