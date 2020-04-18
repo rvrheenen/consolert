@@ -10,18 +10,16 @@
 Created by: Rick van Rheenen
 
 Improved NodeJS console
-Extends console logging by adding prefix and colors.
+Extends console logging by adding prefix, timestamp and colors.
 
 
-### Installation
+## Installation
+``` console
 npm install consolert
-
-### Usage
-To overwrite the built-in console:
-Oneliner:
-``` javascript
-const console = new (require("consolert"))(options)
 ```
+
+## Usage
+To overwrite the built-in console:
 
 "Normal" way to do it:
 ``` javascript
@@ -29,7 +27,14 @@ const Consolert = require("consolert")
 const console = new Consolert(options)
 ```
 
-options: optional object containing any or none of the following k/v pairs: 
+Alternative oneliner:
+``` javascript
+const console = new (require("consolert"))(options)
+```
+
+
+###### options
+optional object containing any or none of the following k/v pairs: 
 ```
 tag      - String   (default: "N/A")
 debug    - Boolean  (default: false) 
@@ -38,7 +43,20 @@ showTag  - Boolean  (default: true)
 showType - Boolean  (default: true)
 ```
 
-#### Working example:
+#### methods
+##### setConfig [options]
+
+Options can be changed after initializing by passing the required options as an object to the setConfig method:
+
+``` javascript
+const Consolert = require("consolert")
+const console = new Consolert()
+console.setConfig({tag: "TAG", debug: true})
+```
+
+
+
+## Working example:
 
 index.js
 ``` javascript
@@ -59,9 +77,9 @@ DEBUG 2020-04-17 15:52:53 [APP] eee bugses!
 WARN  2020-04-17 15:52:53 [APP] Something might be broken..
 ERROR 2020-04-17 15:52:53 [APP] Something is definitely broken!
 ```
-(note these would be colored according to their type, but markdown doesn't let me show that..)
+(note these would be colored according to their type of method, but markdown doesn't let me show that..)
 
-### todo
+## todo
 - [x] publish
 - [x] add tests
 - [x] allow config adjustment after initialization
