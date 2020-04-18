@@ -21,14 +21,10 @@ const { Console } = require('console');
 const chalk = require("chalk")
 
 module.exports = class Consolert extends Console {
-    constructor({tag=["N/A"], debug=false, showTime=true, showTag=true, showType=true} = {}) {
+    constructor(  {tag=["N/A"], debug=false, showTime=true, showTag=true, showType=true} = {}  ) {
         super(process.stdout);
-
-        this.tag       = tag
-        this.debugMode = debug
-        this.showTime  = showTime
-        this.showTag   = showTag
-        this.showType  = showType
+        
+        this.setConfig({tag, debug,showTime, showTag, showType})
 
         this.METHODS = {
             "log": {
@@ -59,6 +55,14 @@ module.exports = class Consolert extends Console {
             
         }
         this._populateMethods()
+    }
+
+    setConfig = (options = {}) => {
+        this.tag       = options.hasOwnProperty('tag') ? options.tag : this.tag;
+        this.debugMode = options.hasOwnProperty('debug') ? options.debug : this.debugMode;
+        this.showTime  = options.hasOwnProperty('showTime') ? options.showTime : this.showTime;
+        this.showTag   = options.hasOwnProperty('showTag') ? options.showTag : this.showTag;
+        this.showType  = options.hasOwnProperty('showType') ? options.showType : this.showType;
     }
 
     _populateMethods() {
@@ -92,7 +96,11 @@ module.exports = class Consolert extends Console {
     }
 
     _getType = (type="LOG") => {
-        return type.padEnd( Math.max(...Object.keys(this.METHODS).map(m => m.length)) )
+        return type.padEnd( this._getLengthOfLongestMethod() )
+    }
+
+    _getLengthOfLongestMethod = () => {
+        return Math.max(...Object.keys(this.METHODS).map(m => m.length))
     }
 
 

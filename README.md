@@ -64,6 +64,7 @@ ERROR 2020-04-17 15:52:53 [APP] Something is definitely broken!
 ### todo
 - [x] publish
 - [x] add tests
+- [x] allow config adjustment after initialization
 - [ ] expand debug to be levels instead of boolean
 - [ ] allow customizing onlyInDebugMode methods
 - [ ] allow for custom stdout and stderr
