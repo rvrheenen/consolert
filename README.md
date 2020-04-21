@@ -7,6 +7,9 @@
 [![Donate](https://img.shields.io/badge/Donate-Liberapay-informational.svg)](https://liberapay.com/rvrheenen)
 [![Donate](https://img.shields.io/badge/Donate-Crypto-informational.svg)](https://commerce.coinbase.com/checkout/c1219cf1-95da-4bdb-8089-7baddb1a2d34)
 
+
+[![NPM](https://nodei.co/npm/consolert.png?downloads=true)](https://nodei.co/npm/consolert/)
+
 Created by: Rick van Rheenen
 
 Improved NodeJS console

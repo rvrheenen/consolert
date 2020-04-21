@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --runInBand",
     "test-watch": "jest --runInBand --watch",
-    "publish": "np"
+    "release": "np"
   },
   "jest": {
     "testEnvironment": "node"
