@@ -14,6 +14,7 @@ Created by: Rick van Rheenen
 
 Improved NodeJS console
 Extends console logging by adding prefix, timestamp and colors.
+This package will enhance the output of your project simply by overwriting the console object, no other code adjustments are needed.
 
 
 ## Installation
